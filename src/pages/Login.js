@@ -32,7 +32,7 @@ const Login = () => {
 
 
   useEffect(() => {
-    if (isSuccess) {
+    if (user !== null || isSuccess) {
       navigate("admin");
     } else {
       navigate("");
